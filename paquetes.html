@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Template</title>
+    <link rel="icon" sizes="180x180" href="assets/idle/favicon.svg" type="image/svg+xml">
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+        <header>
+            <div class="d-flex flex-row align-items-center">
+                <img src="assets/ui/logo-white.svg" alt="logo-variation-1" height="40px"/>
+                <div class="d-flex flex-column align-items-start" style="margin-left: 20px;">
+                    <span class="xs-text-sb text-color-white">Usuario</span>
+                    <span class="small-text-regular text-color-white">Juan José García</span>
+                </div>
+            </div>
+            <div class="d-flex flex-row align-items-center">
+                <div class="d-flex mr-4" style="gap:10px">
+                    <img src="assets/ui/home-04.svg" alt="logo-variation-1" height="20px"/>
+                    <span class="little-text-sb text-color-white">Inicio</span>
+                </div>
+                
+                <div class="d-flex flex-column align-items-start" style="margin-left: 20px;">
+                    <span class="little-text-sb text-color-white">Cerrar sesión</span>
+                </div>
+            </div>
+        </header>
+        <body style="margin: 0; background-color: var(--off-white);" >
+        
+    
+
+        <div class="d-flex flex-row">
+            <nav class="d-flex flex-column align-items-start">
+                <ul>
+                    <li class="nav-btn little-text-sb">
+                        <img class="icon" src="assets/ui/plane.svg" alt="avion" height="20px"/>
+                        <span>Embarques</span>
+                        <div class="chev-box">
+                            <img class="chev" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                    </li>
+                    <li class="nav-btn little-text-sb">
+                        <img class="icon" src="assets/ui/package.svg" alt="caja" height="20px"/>
+                        <span>Paquetes</span>
+                        <div class="chev-box">
+                            <img class="chev" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                    </li>
+                    <li class="nav-btn little-text-sb">
+                        <img class="icon" src="assets/ui/user-circle.svg" alt="usuario" height="20px"/>
+                        <span>Clientes</span>
+                        <div class="chev-box">
+                            <img class="chev" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                    </li>
+                    <li class="nav-btn little-text-sb">
+                        <img class="icon" src="assets/ui/notification-text.svg" alt="caja" height="20px"/>
+                        <span>Pedidos</span>
+                        <div class="chev-box">
+                            <img class="chev" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                    </li>
+                    <li class="nav-btn little-text-sb">
+                        <img class="icon" src="assets/ui/receipt-check.svg" alt="recibo" height="20px"/>
+                        <span>Facturación</span>
+                        <div class="chev-box">
+                            <img class="chev" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                    </li>
+                    <li class="nav-btn little-text-sb">
+                        <img class="icon" src="assets/ui/arrow-square-up-right.svg" alt="flecha" height="20px"/>
+                        <span>Egresos</span>
+                        <div class="chev-box">
+                            <img class="chev" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                    </li>
+                    <li class="nav-btn little-text-sb">
+                        <img class="icon" src="assets/ui/settings-01.svg" alt="settings" height="20px"/>
+                        <span>Configuración</span>
+                        <div class="chev-box">
+                            <img class="chev" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <!--Nota para el desarrollador: Cada submenu tiene un id unico, el i-ésimo boton del menu tiene un submenu que le corresponde con id='i' (Ej.: Embarques = 1)-->
+
+            <div class="mega-menu-side d-flex flex-column align-items-start">
+                    <div class=" flex-column align-items-start sub-menu" id="1">
+                        <div class="d-flex flex-row align-items-center">
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Datos Embarques</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Consultas Embarques</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Reportes Embarques</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                    </div>
+
+                    <div class="flex-column align-items-start sub-menu" id="2">
+                        <div class="d-flex flex-row align-items-center">
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Búsqueda Rápida de Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Registrar Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Listar Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Recepción Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Paquetes en Depósito</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Entrega de Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Consultar Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Reportes de Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                    </div>
+
+                    <div class="flex-column align-items-start sub-menu" id="3">
+                        <div class="d-flex flex-row align-items-center">
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Búsqueda Rápida de Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Registrar Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Listar Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Recepción Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Paquetes en Depósito</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Entrega de Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Consultar Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Reportes de Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                    </div>
+
+                    <div class="flex-column align-items-start sub-menu" id="4">
+                        <div class="d-flex flex-row align-items-center">
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Búsqueda Rápida de Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Registrar Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Listar Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Recepción Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Paquetes en Depósito</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Entrega de Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Consultar Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Reportes de Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                    </div>
+
+                    <div class="flex-column align-items-start sub-menu" id="5">
+                        <div class="d-flex flex-row align-items-center">
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Búsqueda Rápida de Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Registrar Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Listar Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Recepción Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Paquetes en Depósito</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Entrega de Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Consultar Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Reportes de Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                    </div>
+
+                    <div class="flex-column align-items-start sub-menu" id="6">
+                        <div class="d-flex flex-row align-items-center">
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Búsqueda Rápida de Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Registrar Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Listar Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Recepción Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Paquetes en Depósito</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Entrega de Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Consultar Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Reportes de Paquetes</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                    </div>
+
+                    <div class="flex-column align-items-start sub-menu" id="7">
+                        <div class="d-flex flex-row align-items-center">
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Configuración</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Usuarios</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Roles de usuarios</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Oficinas Remotas</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Tipos de Egresos</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Reportes de Bitácora 
+                                de Auditoría</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Vaciar Bitácora 
+                                de Auditoría</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Administración 
+                                de Mensajería</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                        <div>
+                            <span class="little-text-sb text-mega-menu text-color-dark-gray">Redacción de Informaciones</span>
+                            <img class="grey-icon" src="assets/ui/chevron-right.svg" alt="desplazar" height="20px"/>
+                        </div>
+                    </div>
+            </div>
+            <div class="content-page d-flex flex-column pb-0 mb-0">
+                <h5 class="small-text-sb text-color-gray">Paquetes</h5>
+                <div class="d-flex justify-content-between w-100">
+                    <h2 class="sub-text-bold text-color-black-lilac">Registro de paquetes</h2>
+                    <div class="d-flex justify-content-end" style="width: 600px; gap:12px">
+                        <div class="input-search d-flex justify-content-between">
+                            <input type="text" class="input-field little-text-regular text-color-black-lilac" placeholder="Buscar por Código, Denominación o Estado"/>
+                            <img src="assets/ui/search-lg.svg" alt="buscar" height="22px"/>
+                        </div>
+                    </div>
+                </div>
+                <form class="form-content">
+                    <div class="d-flex form-box" style="gap: 20px">
+                        <div class="form-row row">
+                            <div class="input col-4">
+                                <p class="little-text-sb text-color-dark-gray">Oficina de Embarque <span class="text-color-red">*</span> </p>
+                                <select class="input-field input-lilac little-text-regular text-color-black-lilac">
+                                    <option value="1">MIAMI WH/AEREO</option>
+                                    <option value="2">MIAMI WH/AEREO</option>
+                                    <option value="3">MIAMI WH/AEREO</option>
+                                    <option value="4">MIAMI WH/AEREO</option>
+                                    <option value="5">MIAMI WH/AEREO</option> 
+                                </select>
+                            </div>
+
+                            <div class="input col-4">
+                                <p class="little-text-sb text-color-dark-gray">Fecha de Embarque <span class="text-color-red">*</span> </p>
+                                <input type="date" class="input-select little-text-regular text-color-black-lilac"/>
+                            </div>
+                         
+
+                            
+
+                            <div class="input col-6 py-3">
+                                <p class="little-text-sb text-color-dark-gray">Tracking <span class="text-color-red">*</span> </p>
+                                <div class="d-flex" style="gap:12px">
+                                    <input type="text" class="input-select little-text-regular text-color-black-lilac m-0" style="width: 320px !important;" placeholder="399388938899877883"/>
+                                    <button class="tracking-btn">Generar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row d-flex justify-content-between row">
+
+                            <div class="input">
+                                <p class="little-text-sb text-color-dark-gray">Suite <span class="text-color-red">*</span> </p>
+                                <input type="text" class="input-select input-lilac little-text-regular text-color-black-lilac"/>
+                            </div>
+
+                            <div class="input d-flex flex-column">
+                                <p class="little-text-sb text-color-dark-gray">Nombre y Apellido <span class="text-color-red">*</span> </p>
+                                <select class="input-field little-text-regular text-color-black-lilac">
+                                    <option value="1">John Doe</option>
+                                    <option value="2">John Doe</option>
+                                    <option value="3">John Doe</option>
+                                    <option value="4">John Doe</option>
+                                    <option value="5">John Doe</option>
+                                </select>
+                                <span class="xs-text-sb pt-2 text-color-dark-gray">Empiece a escribir</span>
+                            </div>
+                            <div class="d-flex align-items-center" style="gap:30px">
+                                <div class="row d-flex align-items-center py-3" style="width: 150px; height: 76px; background-color: #E7E4F2; border-radius: 20px;">
+                                    <div class="col-4 d-flex justify-content-end p-0 pr-3">
+                                        <img src="assets/ui/locationslash.svg" alt="agregar" height="24px"/>
+                                    </div>
+                                    <div class="col-6 p-0">
+                                        <p class="little-text-sb text-color-black-lilac m-0">Sucursal</p>
+                                        <p class="little-text-regular text-color-black-lilac m-0">-</p>
+                                    </div>
+                                </div>
+                                <div class="p-0">
+                                    <p class="little-text-sb text-color-dark-gray m-0">Flete destino</p>
+                                    <p class="little-text-regular text-color-dark-gray m-0">Gs. 0</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex form-box" style="gap: 20px">
+                        <div class="form-row">
+                            <div class="input d-flex flex-column">
+                                <p class="little-text-sb text-color-dark-gray">Descripción del paquete <span class="text-color-red">*</span> </p>
+                                <select class="input-field little-text-regular text-color-black-lilac">
+                                    <option value="1">Reloj 001</option>
+                                    <option value="2">John Doe</option>
+                                    <option value="3">John Doe</option>
+                                    <option value="4">John Doe</option>
+                                    <option value="5">John Doe</option>
+                                </select>
+                                <span class="xs-text-sb pt-2 text-color-dark-gray">Empiece a escribir</span>
+                            </div>
+
+                            <div class="input">
+                                <p class="little-text-sb text-color-dark-gray">Foto del Paquete <span class="text-color-red">*</span> </p>
+                                <div class="foto-paquete-div little-text-regular text-color-black-lilac mr-3">
+                                    <input type="file" class="foto-paquete-input" id="foto-paquete" name="foto-paquete" accept="image/*"/>
+                                </div>
+                            </div>
+
+
+
+                            
+                        </div>
+
+                        <div class="form-row d-flex justify-content-between">
+                            <div class="input d-flex flex-column">
+                                <p class="little-text-sb text-color-dark-gray">Peso Kg <span class="text-color-red">*</span> </p>
+                                <input type="text" class="input-select little-text-regular text-color-black-lilac" placeholder="Ingrese el peso"/>
+                            </div>
+
+                            <div class="input">
+                                <p class="little-text-sb text-color-dark-gray">Largo (cm) </p>
+                                <input type="text" class="input-select little-text-regular text-color-black-lilac" style="width: 150px !important;" placeholder="0.00"/>
+                            </div>
+                            <div class="input">
+                                <p class="little-text-sb text-color-dark-gray">Ancho (cm)</p>
+                                <input type="text" class="input-select little-text-regular text-color-black-lilac" style="width: 150px !important;" placeholder="0.00"/>
+                            </div>
+                            <!--flete usd y flete aereo usd-->
+                            <div class="input">
+                                <p class="little-text-sb text-color-dark-gray">Alto (cm) </p>
+                                <input type="text" class="input-select little-text-regular text-color-black-lilac" style="width: 150px !important;" placeholder="0.00"/>
+                            </div>
+                            <div class="input">
+                                <p class="little-text-sb text-color-dark-gray">Volumen </p>
+                                <input type="text" class="input-select input-lilac little-text-regular text-color-black-lilac" style="width: 150px !important;" placeholder="0.00"/>
+                            </div>
+                            
+                        </div>
+
+
+                        <div class="form-row d-flex justify-content-between">
+                            <div class="input">
+                                <p class="little-text-sb text-color-dark-gray">Remitente <span class="text-color-red">*</span> </p> 
+                                <input type="text" class="input-select little-text-regular text-color-black-lilac" placeholder="John Doe"/>
+                            </div>
+
+                            <div class="input">
+                                <p class="little-text-sb text-color-dark-gray">Cargos adicionales</p> 
+                                <div class="d-flex">
+                                    <label class="checkbox-container">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <p class="little-text-sb text-color-black-lilac">Tiene cargos adicionales</p>
+                                </div>  
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="d-flex form-box" style="gap: 20px">
+
+                        <div class="form-row d-flex justify-content-between w-50">
+                            <div class="input w-100">
+                                <p class="little-text-sb text-color-dark-gray">Observaciones</p>
+                                <textarea class="input-select little-text-regular text-color-black-lilac mr-3 w-100" placeholder="Escribe aquí la observación" style="width: 387px; height: 75px; "></textarea>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                    <div class="d-flex justify-content-end" style="gap: 14px">
+                        <button class="btn search-btn mr-2 small-text-sb" style="height: 50px;">Solo guardar</button>
+                        <button class="btn save-btn mr-0" style="height: 50px;"><img src="assets/ui/printer.svg"> Imprimir y guardar</button>
+                    </div>
+                
+                </form>
+                
+            </div>
+            
+        </div>
+        <div class="content-page d-flex flex-column" style="background-color: #E7E4F2;">
+            <h5 class="small-text-sb text-color-gray"> </h5>
+            <div class="d-flex justify-content-between w-100">
+                <h2 class="sub-text-bold text-color-black-lilac">Paquetes recientes</h2>
+
+            </div>
+
+            <div class="table-container">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="little-text-sb text-color-gray">Suite</th>
+                            <th class="little-text-sb text-color-gray" >Nombre y Apellido</th>
+                            <th class="little-text-sb text-color-gray">Tracking</th>
+                            <th class="little-text-sb text-color-gray">Fecha y hora de registro</th>
+                            <th class="little-text-sb text-color-gray">Acciones</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="little-text-regular text-color-black-lilac">12243</td>
+                            <td class="little-text-regular text-color-black-lilac">JUAN JOSÉ GARCERA BENITEZ</td>
+                            <td class="little-text-regular text-color-black-lilac">399388938899877883</td>
+                            <td class="little-text-regular text-color-black-lilac">12/12/2020 12:00</td>
+                            <td class="little-text-regular text-color-black-lilac">
+                                <div class="d-flex" style="gap: 70px;">
+                                    <div class="d-flex" style="gap: 5px;">
+                                        <img src="assets/ui/edit-01.svg" alt="editar" height="17px"/>
+                                        <p class="xs-text-sb text-color-gray m-0">Editar</p>
+                                    </div>
+                                    <div class="d-flex delete-box" style="gap: 5px;">
+                                        <img src="assets/ui/trash-03.svg" alt="eliminar" height="17px"/>
+                                        <p class="xs-text-sb text-color-red m-0">Eliminar</p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="little-text-regular text-color-black-lilac">12243</td>
+                            <td class="little-text-regular text-color-black-lilac">JUAN JOSÉ GARCERA BENITEZ</td>
+                            <td class="little-text-regular text-color-black-lilac">399388938899877883</td>
+                            <td class="little-text-regular text-color-black-lilac">12/12/2020 12:00</td>
+                            <td class="little-text-regular text-color-black-lilac">
+                                <div class="d-flex" style="gap: 70px;">
+                                    <div class="d-flex" style="gap: 5px;">
+                                        <img src="assets/ui/edit-01.svg" alt="editar" height="17px"/>
+                                        <p class="xs-text-sb text-color-gray m-0">Editar</p>
+                                    </div>
+                                    <div class="d-flex delete-box" style="gap: 5px;">
+                                        <img src="assets/ui/trash-03.svg" alt="eliminar" height="17px"/>
+                                        <p class="xs-text-sb text-color-red m-0">Eliminar</p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="little-text-regular text-color-black-lilac">12243</td>
+                            <td class="little-text-regular text-color-black-lilac">JUAN JOSÉ GARCERA BENITEZ</td>
+                            <td class="little-text-regular text-color-black-lilac">399388938899877883</td>
+                            <td class="little-text-regular text-color-black-lilac">12/12/2020 12:00</td>
+                            <td class="little-text-regular text-color-black-lilac">
+                                <div class="d-flex" style="gap: 70px;">
+                                    <div class="d-flex" style="gap: 5px;">
+                                        <img src="assets/ui/edit-01.svg" alt="editar" height="17px"/>
+                                        <p class="xs-text-sb text-color-gray m-0">Editar</p>
+                                    </div>
+                                    <div class="d-flex delete-box" style="gap: 5px;">
+                                        <img src="assets/ui/trash-03.svg" alt="eliminar" height="17px"/>
+                                        <p class="xs-text-sb text-color-red m-0">Eliminar</p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="little-text-regular text-color-black-lilac">12243</td>
+                            <td class="little-text-regular text-color-black-lilac">JUAN JOSÉ GARCERA BENITEZ</td>
+                            <td class="little-text-regular text-color-black-lilac">399388938899877883</td>
+                            <td class="little-text-regular text-color-black-lilac">12/12/2020 12:00</td>
+                            <td class="little-text-regular text-color-black-lilac">
+                                <div class="d-flex" style="gap: 70px;">
+                                    <div class="d-flex" style="gap: 5px;">
+                                        <img src="assets/ui/edit-01.svg" alt="editar" height="17px"/>
+                                        <p class="xs-text-sb text-color-gray m-0">Editar</p>
+                                    </div>
+                                    <div class="d-flex delete-box" style="gap: 5px;">
+                                        <img src="assets/ui/trash-03.svg" alt="eliminar" height="17px"/>
+                                        <p class="xs-text-sb text-color-red m-0">Eliminar</p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="d-flex w-100 justify-content-center pagination" style="gap: 21px; align-self: flex-end;">
+                <div class="d-flex" style="gap: 10px;">
+                    <img src="assets/ui/chevron-left-disabled.svg" alt="arrow-left" height="19px"/>
+                </div>
+                <span class="xs-text-sb text-color-dark-gray">Página</span>
+                <div class="xs-text-sb text-color-black-lilac" style="background-color: white; border-radius: 10px; width: 40px; text-align: center;">
+                    1
+                </div>
+                <span class="xs-text-sb text-color-dark-gray">de 2</span>
+                <div class="d-flex" style="gap: 10px;">
+                    <img src="assets/ui/chevron-right-active.svg" alt="arrow-left" height="19px"/>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+
+
+            //get all the buttons for the nav and change color with the status 'Active'
+            const navBtns = document.querySelectorAll('.nav-btn');
+            //Get the position on the right where the nav ends
+            const nav = document.querySelector('nav');
+            const navPositionX = nav.getBoundingClientRect().right;
+            const navPositionY = nav.getBoundingClientRect().top;
+            //get the mega menu and put it on the right position
+            const megaMenu = document.querySelector('.mega-menu-side');
+            navBtns.forEach((btn,index) => {
+                btn.addEventListener('click', () => {
+                    if (btn.classList.contains('nav-btn-active')) {
+                        //opacity 0 and display none to all the sub-menus
+                        const subMenus = document.querySelectorAll('.sub-menu');
+                        btn.classList.remove('nav-btn-active');
+                        btn.querySelector('.icon').classList.remove('icon-active');
+                        megaMenu.style.left = '-5' + 'vw';
+                        return;
+                    }
+                    console.log(index)
+                    
+                    megaMenu.style.left = navPositionX + 'px';
+
+                    //check if another sub menu is on display block and change it to display none and opacity 0
+                    const subMenus = document.querySelectorAll('.sub-menu');
+                    subMenus.forEach((subMenu) => {
+                        if (subMenu.style.display === 'flex') {
+                            subMenu.setAttribute('style', 'display:none !important; opacity:0 !important');
+                        }
+                    });
+                    // get the div class sub-menu with thid id and put it on display block and opacity 100 
+                    const subMenu = document.querySelector(`.mega-menu-side > .sub-menu:nth-child(${index+1})`);
+                    subMenu.setAttribute('style', 'display:flex !important; opacity:100 !important');
+                    navBtns.forEach((btn,i) => {
+                        if (btn.classList.contains('nav-btn-active')) {
+                            btn.classList.remove('nav-btn-active');
+                            const sub = document.querySelector(`.mega-menu-side > .sub-menu:nth-child(${i+1})`);
+                            sub.setAttribute('style', 'display:none !important; opacity:0 !important');
+                        }
+
+
+                    });
+                    //add the class nav-btn-active to the button clicked
+                    btn.classList.add('nav-btn-active');
+                });
+
+
+
+            });
+
+            
+        </script>
+    </body>
+</html>

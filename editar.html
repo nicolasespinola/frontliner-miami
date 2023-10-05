@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Template</title>
+    <link rel="icon" sizes="180x180" href="assets/idle/favicon.svg" type="image/svg+xml">
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body class="p-0 m-0 my-5" style="background-color: #8E37ED;" >
+    <div class="container py-3" style="background-color:#FFFFFF;border-radius: 20px">
+        <div class="row d-flex px-5 py-2 align-items-center justify-content-between" style="border-style: solid; border-width: 0px 0px 1.5px 0px; border-color: #E7E4F2;">
+            <h4 class="med-text-bold text-color-black-lilac">
+                Datos del paquete
+            </h4>
+            <!--CLose-->
+            <button class="med-text-bold text-color-black-lilac" style="background: none; border: none;">
+                X
+            </button>
+        </div>
+        <div class="row px-3 pt-3">
+            <div class="input col-4">
+                <p class="little-text-sb text-color-dark-gray">Suite </p>
+                <p class="little-text-regular text-color-black-lilac">10064</p>
+            </div>
+
+            <div class="input col-4 d-flex flex-column">
+                <p class="little-text-sb text-color-dark-gray">Nombre y Apellido </p>
+                <p class="little-text-regular text-color-black-lilac">John Doe</p>
+            </div>
+            <div class="d-flex align-items-center" style="gap:30px">
+                <div class="row d-flex align-items-center py-3" style="width: 150px; height: 76px; background-color: #E0FFE4; border-radius: 20px;">
+                    <div class="col-4 d-flex justify-content-end p-0 pr-3">
+                        <img src="assets/ui/locationtick.svg" alt="agregar" height="24px"/>
+                    </div>
+                    <div class="col-6 p-0">
+                        <p class="little-text-sb text-color-black-lilac m-0">Sucursal</p>
+                        <p class="little-text-regular text-color-black-lilac m-0">Central</p>
+                    </div>
+                </div>
+                <div class="p-0">
+                    <p class="little-text-sb text-color-black-lilac m-0">Flete destino</p>
+                    <p class="little-text-regular text-color-black-lilac m-0">Gs. 120.000</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="row px-3  pt-2">
+            <div class="col-4 m-0">
+                <p class="little-text-sb text-color-dark-gray">Oficina de Embarque <span class="text-color-red">*</span> </p>
+                <select class="input-field input-lilac little-text-regular text-color-black-lilac">
+                    <option value="1">MIAMI WH/AEREO</option>
+                    <option value="2">MIAMI WH/AEREO</option>
+                    <option value="3">MIAMI WH/AEREO</option>
+                    <option value="4">MIAMI WH/AEREO</option>
+                    <option value="5">MIAMI WH/AEREO</option> 
+                </select>
+            </div>
+
+            <div class="col-3 m-0 mr-5" >
+                <p class="little-text-sb text-color-dark-gray">Fecha de Embarque <span class="text-color-red">*</span> </p>
+                <input type="date" class="input-select little-text-regular text-color-black-lilac"/>
+            </div>
+         
+
+        
+
+            <div class="col-4 pr-0 m-0" style="padding: 0!important;">
+                <p class="little-text-sb text-color-dark-gray">Tracking <span class="text-color-red">*</span> </p>
+                <div class="d-flex" style="gap:12px">
+                    <input type="text" class="input-select little-text-regular text-color-black-lilac m-0" style="width: 320px !important;" placeholder="399388938899877883"/>
+                    <button class="tracking-btn">Generar</button>
+                </div>
+            </div>
+        </div> 
+        <div class="row px-3  pt-4">
+            <div class="input d-flex flex-column col-4">
+                <p class="little-text-sb text-color-dark-gray">Descripción del paquete <span class="text-color-red">*</span> </p>
+                <select class="input-field little-text-regular text-color-black-lilac">
+                    <option value="1">Reloj 001</option>
+                    <option value="2">John Doe</option>
+                    <option value="3">John Doe</option>
+                    <option value="4">John Doe</option>
+                    <option value="5">John Doe</option>
+                </select>
+                <span class="xs-text-sb pt-2 text-color-dark-gray">Empiece a escribir</span>
+            </div>
+
+            <div class="input d-flex flex-column col-4">
+                <p class="little-text-sb text-color-dark-gray">Foto del Paquete <span class="text-color-red">*</span> </p>
+                <div class=" little-text-regular text-color-black-lilac mr-3 input-field px-3 py-3" style="border-radius: 10px; border: 1px solid var(--Grey-20, #E7E4F2);background: var(--White, #FFF);">
+                    <span class="text-color-lilac little-text-sb pr-2 my-3">Descargar foto</span>
+                    <img src="assets/ui/documentdownload.svg" alt="agregar" height="24px"/>
+                </div>
+            </div>
+        </div>
+        <div class="row px-3  pt-4">
+            <div class="input col-4 d-flex flex-column">
+                <p class="little-text-sb text-color-dark-gray">Peso Kg <span class="text-color-red">*</span> </p>
+                <input type="text" class="input-select little-text-regular text-color-black-lilac w-100" placeholder="Ingrese el peso"/>
+            </div>
+
+            <div class="input col-2">
+                <p class="little-text-sb text-color-dark-gray">Largo (cm) </p>
+                <input type="text" class="input-select little-text-regular text-color-black-lilac" style="width: 150px !important;" placeholder="0.00"/>
+            </div>
+            <div class="input col-2">
+                <p class="little-text-sb text-color-dark-gray">Ancho (cm)</p>
+                <input type="text" class="input-select little-text-regular text-color-black-lilac" style="width: 150px !important;" placeholder="0.00"/>
+            </div>
+            <!--flete usd y flete aereo usd-->
+            <div class="input col-2">
+                <p class="little-text-sb text-color-dark-gray">Alto (cm) </p>
+                <input type="text" class="input-select little-text-regular text-color-black-lilac" style="width: 150px !important;" placeholder="0.00"/>
+            </div>
+            <div class="input col-2">
+                <p class="little-text-sb text-color-dark-gray">Volumen </p>
+                <input type="text" class="input-select input-lilac little-text-regular text-color-black-lilac" style="width: 150px !important;" placeholder="0.00"/>
+            </div>
+        </div>
+        <div class="row px-3  pt-4 pb-3">
+            <div class="input col-4">
+                <p class="little-text-sb text-color-dark-gray">Remitente <span class="text-color-red">*</span> </p> 
+                <input type="text" class="input-select w-100 little-text-regular text-color-black-lilac" placeholder="John Doe"/>
+            </div>
+
+            <div class="input col-3">
+                <p class="little-text-sb text-color-dark-gray">Cargos adicionales</p> 
+                <div class="d-flex">
+                    <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <p class="little-text-sb text-color-black-lilac">Tiene cargos adicionales</p>
+                </div>  
+                <input type="text" class="input-select w-100 little-text-regular text-color-black-lilac mb-2" placeholder="Motivo del cargo"/>
+                <input type="text" class="input-select w-100 little-text-regular text-color-black-lilac py-3" placeholder="Monto en USD"/>
+
+            </div>
+
+            <div class="input col-5">
+                    <p class="little-text-sb text-color-dark-gray">Observaciones</p>
+                    <textarea class="input-select little-text-regular text-color-black-lilac mr-3 w-100" placeholder="Escribe aquí la observación" style="width: 387px; height: 75px; "></textarea>
+            </div>
+        </div>
+        <div class="d-flex justify-content-end" style="gap: 14px">
+            <button class="btn trash-btn" style="border: 1px solid var(--Red-20, #FFE0E0);">
+                <img src="assets/ui/trash-03.svg" alt="eliminar" height="18px"/>
+                Eliminar
+            </button>
+            <button class="btn search-btn mr-2 small-text-sb" style="height: 50px;">Solo guardar</button>
+            <button class="btn save-btn mr-0" style="height: 50px;"><img src="assets/ui/printer.svg"> Imprimir y guardar</button>
+        </div>
+    </div>
+</body>

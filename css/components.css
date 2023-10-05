@@ -1,0 +1,199 @@
+@import "colors.css";
+@import "typography.css";
+@import "https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css";
+/* Buttons */
+.btn {
+    background-color: var(--lilac-100);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 35px;
+    gap: 12px;
+    border-radius: 10px;
+    transition: 200ms;
+    cursor: pointer;
+    color: var(--white);
+    border-style: none;
+}
+
+.btn:hover {
+    background-color: var(--dark-lilac);
+    color: var(--white);
+}
+
+.btn:active {
+    background-color: var(--black-lilac);
+    color: var(--white);
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 .2rem var(--lilac-50);
+}
+
+.search-btn {
+    background-color: var(--white);
+    color: var(--lilac-100);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 14px 35px;
+    gap: 12px;
+    border-radius: 10px;
+    transition: 200ms;
+    border: 1px solid #E7E4F2;
+}
+
+.search-btn:hover {
+    background-color: var(--lilac-20);
+    color: var(--lilac-100);
+    transition: 200ms;
+}
+
+
+
+
+.trash-btn {
+    background-color: var(--white);
+    color: var(--dark-red);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 14px 35px;
+    gap: 12px;
+    border-radius: 10px;
+    transition: 200ms;
+    border-style: none;
+
+}
+
+.trash-btn:hover {
+    background-color: var(--dark-red);
+    color: var(--white);
+}
+
+.trash-btn:focus {
+    box-shadow: 0 0 0 .2rem var(--red-50);
+}
+
+.sidebar-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+    width: 189px;
+    color: var(--white);
+    transition: 200ms;
+}
+
+.sidebar-btn:hover {
+    background-color: var(--off-white);
+    color: var(--lilac-100);
+    transition: 200ms;
+}
+
+
+
+.sidebar-btn-clicked {
+    background-color: var(--off-white);
+    width: 209px;
+    transition: 200ms;
+}
+
+.login-field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 14px 20px;
+    gap: 76px;
+    width: 299px;
+    height: 50px;
+    border: 1px solid #E7E4F2;
+    border-radius: 10px;
+    margin: 15px;
+    transition: 20ms;
+}
+
+
+.login-field:focus {
+    border: 2px solid var(--lilac-50);
+    padding: 14px 19px;
+    outline: none;
+    transition: 20ms;
+}
+
+.delete-box:hover {
+    cursor: pointer;
+    
+}
+
+.delete-box:hover > img, .delete-box:hover > p {
+    color: var(--dark-red);
+    filter: saturate(400%);
+    transition: 200ms;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.239);
+    z-index: 2;
+    opacity: 0;
+    
+}
+
+.modal-body {
+    color: var(--black-lilac);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+    gap: 20px;
+    position: absolute;
+    width: 438px;
+    height: 255px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.073);
+    top: 33vh;
+    left: 38vw;
+    z-index: 3;
+    opacity: 0;
+
+    
+}
+
+.modal-body > p {
+    text-align: center;
+    max-width: 284px;
+}
+
+.modal-body > div {
+    gap: 12px;
+}
+
+.modal-body > div > .btn {
+    padding: 13px 55px;
+    min-width: 170px !important;
+}
+
+.modal-body > div > .trash-btn > img {
+    filter: brightness(80%);
+    transition: 200ms;
+}
+
+.modal-body > div > .trash-btn:hover > img {
+    filter: brightness(500%);
+    transition: 200ms;  
+}
+
+.pagination {
+
+    margin: 15px 0;
+}
