@@ -28,6 +28,7 @@ Se pueden utilizar en todos los navegadores que soporten HTML5 y CSS3. Los archi
 | template.html | Manejo de los roles de los usuarios |
 | paquetes.html | Registro de Paquetes |
 | ticket.html | Pantalla de Ticket generado |
+| editar.html | Pantalla de Editar Paquete |
 | ./assets | Iconografía & vectores |
 | ./css | Estilos utilizados |
 
